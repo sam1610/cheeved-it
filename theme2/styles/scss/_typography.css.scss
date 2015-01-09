@@ -13,7 +13,7 @@ $droidSans: 'Droid Sans', helvetica, sans-serif;
 h1, h2, h3, h4, h5, h6 {
   font-family:$droidSans;
   font-weight:700;
-  color:#222;
+  color:$black;
 }
 
 /*
@@ -24,6 +24,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family:$droidSans;
   font-weight:400;
 }
+
 .bold {
   font-family:$droidSans;
   font-weifht:700;

@@ -20,11 +20,14 @@ section.home {
         margin-top:15px;
         display:block;
         font-size:18px;
-        color:#666;
+        color:$black;
 
         a {
-          color:#666;
-          text-decoration:underline;
+          color:$blue3;
+
+          &:hover {
+            text-decoration:underline;
+          }
         }
       }
     }
@@ -44,7 +47,7 @@ section.home {
 
     div.achievements {
       margin-bottom:10px;
-      border:1px solid #efefef;
+      border:1px solid #ebebeb;
       border-radius:4px;
       box-shadow:1px 1px 2px 0 rgba(0,0,0,0.05);
       overflow:hidden;
@@ -58,7 +61,7 @@ section.home {
         i {
           margin-right:5px;
           font-size:20px;
-          color:#222;
+          color:$black;
         }
       }
 
@@ -67,7 +70,7 @@ section.home {
           position:relative;
           padding:15px;
           margin-bottom:10px;
-          border-bottom:1px solid #efefef;
+          border-bottom:1px solid #ebebeb;
           font-size:14px;
 
           div.heading {
@@ -91,6 +94,7 @@ section.home {
               div {
                 display:inline-block;
                 float:left;
+                color:$blue3;
 
                 &:first-child {
                   margin-right:6px;
@@ -106,6 +110,7 @@ section.home {
             p {
               font-size:14px;
               line-height:18px;
+              color:#555;
             }
 
             > ul {
@@ -117,6 +122,7 @@ section.home {
                 margin-right:12px;
                 font-size:13px;
                 font-style:italic;
+                color:#555;
 
                 span {
                   &:first-child {
@@ -137,8 +143,9 @@ section.home {
               font-weight:700;
               text-align:center;
               line-height:100px;
-              color:#fff;
-              background-color:#222;
+              color:$blue3;
+              background-color:#fff;
+              border:1px solid $blue3;
             }
           }
 
@@ -174,7 +181,7 @@ section.home {
         i {
           margin-right:5px;
           font-size:20px;
-          color:#222;
+          color:$black;
         }
       }
 
@@ -185,11 +192,13 @@ section.home {
         li {
           margin-bottom:7px;
           font-size:14px;
+          color:$blue3;
 
           i {
             margin-right:5px;
             width:20px;
             text-align:center;
+            color:$black;
           }
 
           &:last-child {
@@ -216,6 +225,15 @@ section.home {
 
             span {
               display:inline-block;
+
+              &:first-child {
+                color:$blue3;
+
+                &:hover {
+                  text-decoration:underline;
+                  cursor:pointer;
+                }
+              }
 
               &:last-child {
                 float:right;
