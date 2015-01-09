@@ -1,0 +1,43 @@
+/*
+// Layout
+*/
+
+/*
+// Clearfix
+*/
+
+%clearfix {
+  &:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+}
+
+/*
+// Els
+*/
+
+section,
+header,
+footer {
+  overflow:hidden;
+  @extend %clearfix;
+}
+
+nav {
+  ul {
+    @extend %clearfix;
+
+    li {
+      display:inline-block;
+      float:left;
+    }
+  }
+}
+
+.container {
+  margin:0 auto;
+  width:1000px;
+  @extend %clearfix;
+}

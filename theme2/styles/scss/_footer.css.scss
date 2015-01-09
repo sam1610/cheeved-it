@@ -1,0 +1,64 @@
+/*
+// Footer
+*/
+
+footer {
+  padding:20px 0;
+
+  > nav,
+  > p {
+    display:inline-block;
+    float:left;
+  }
+
+  nav.footer-nav {
+    width:33.3333%;
+
+    ul {
+      li {
+        padding:0 15px;
+        font-size:12px;
+        border-right:1px solid #ddd;
+
+        &:first-child {
+          padding-left:0;
+        }
+
+        &:last-child {
+          border-right:0;
+        }
+      }
+    }
+  }
+
+  p {
+    margin:0;
+    width:33.333%;
+    font-size:12px;
+    text-align:center;
+    line-height:1;
+  }
+
+  nav.social-nav {
+    width:33.3333%;
+
+    ul {
+      float:right;
+
+      li {
+        font-size:14px;
+        padding-left:4px;
+
+        i {
+          height:22px;
+          width:22px;
+          line-height:22px;
+          border-radius:3px;
+          text-align:center;
+          color:#fff;
+          background-color:#222;
+        }
+      }
+    }
+  }
+}

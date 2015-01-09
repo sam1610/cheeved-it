@@ -1,0 +1,11 @@
+/*
+// Buttons
+*/
+
+.btn {
+  @include trans(200ms);
+
+  &:hover {
+    @include trans(200ms);
+  }
+}

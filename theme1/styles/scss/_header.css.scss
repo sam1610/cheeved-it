@@ -1,0 +1,112 @@
+/*
+// Header
+*/
+
+header {
+  padding:30px 0;
+  background-color:#fff;
+
+  > div {
+    display:inline-block;
+  }
+
+  /*
+  // Logo
+  */
+
+  div.logo-box {
+    float:left;
+    width:70%;
+
+    div.logo {
+      margin-right:10px;
+      float:left;
+      height:60px;
+      width:60px;
+      border-radius:3px;
+      background-color:#222;
+      text-align:center;
+
+      i {
+        font-size:32px;
+        line-height:60px;
+        color:#fff;
+      }
+    }
+
+    h1 {
+      margin:0;
+      padding:0;
+      line-height:38px;
+    }
+
+    span {
+      padding-left:4px;
+      font-size:14px;
+    }
+  }
+
+  /*
+  // User Control
+  */
+
+  div.user-ctrl {
+    float:right;
+    width:30%;
+
+    div.user-info {
+      span {
+        display:block;
+        margin-bottom:10px;
+        text-align:center;
+      }
+
+      nav {
+        ul {
+          li {
+            padding:0 15px;
+            font-size:14px;
+            text-align:center;
+            border-right:1px solid #efefef;
+
+            &:last-child {
+              border-right:0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+// Main Nav
+*/
+
+nav.main-nav {
+  ul {
+    border-top:1px solid #efefef;
+    border-bottom:1px solid #efefef;
+
+    li {
+      a {
+        display:block;
+        padding:0 20px;
+        height:60px;
+        line-height:60px;
+      }
+
+      &:hover {
+        a {
+          background-color:#f9f9f9;
+        }
+      }
+
+      &.active {
+        a {
+          background-color:#f6f6f6;
+        }
+      }
+    }
+  }
+}

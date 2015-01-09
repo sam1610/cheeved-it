@@ -1,0 +1,17 @@
+/*
+// Mixins
+*/
+
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin trans($speed) {
+  transition:all $speed ease-in-out;
+  -webkit-transition:all $speed ease-in-out;
+  -moz-transition:all $speed ease-in-out;
+}

@@ -1,0 +1,229 @@
+/*
+// Homepage Styles
+*/
+
+section.home {
+  padding-top:0;
+  min-height:100%;
+
+  > section,
+  > aside {
+    display:inline-block;
+    float:left;
+  }
+
+  div.intro {
+    h2 {
+      font-size:32px;
+
+      span {
+        margin-top:15px;
+        display:block;
+        font-size:18px;
+        color:#666;
+
+        a {
+          color:#666;
+          text-decoration:underline;
+        }
+      }
+    }
+
+    p {
+      font-size:20px;
+    }
+  }
+
+  section.content {
+    width:73.25%;
+    margin-right:1.75%;
+
+    /*
+    // Achievements
+    */
+
+    div.achievements {
+      margin-bottom:10px;
+      border:1px solid #efefef;
+      border-radius:4px;
+      box-shadow:1px 1px 2px 0 rgba(0,0,0,0.05);
+      overflow:hidden;
+
+      > h3 {
+        margin:0;
+        padding:15px 20px;
+        font-size:18px;
+        background-color:#f9f9f9;
+
+        i {
+          margin-right:5px;
+          font-size:20px;
+          color:#222;
+        }
+      }
+
+      > ul {
+        > li {
+          position:relative;
+          padding:15px;
+          margin-bottom:10px;
+          border-bottom:1px solid #efefef;
+          font-size:14px;
+
+          div.heading {
+            overflow:hidden;
+            padding-left:115px;
+
+            > h4,
+            div.stats {
+              display:inline-block;
+            }
+
+            > h4 {
+              float:left;
+              margin:0;
+              font-size:16px;
+            }
+
+            div.stats {
+              float:right;
+
+              div {
+                display:inline-block;
+                float:left;
+
+                &:first-child {
+                  margin-right:6px;
+                }
+              }
+            }
+          }
+
+          div.info {
+            overflow:hidden;
+            padding-left:115px;
+
+            p {
+              font-size:14px;
+              line-height:18px;
+            }
+
+            > ul {
+              overflow:hidden;
+
+              li {
+                display:inline-block;
+                float:left;
+                margin-right:12px;
+                font-size:13px;
+                font-style:italic;
+
+                span {
+                  &:first-child {
+                    font-weight:bold;
+                  }
+                }
+              }
+            }
+
+            div.score {
+              position:absolute;
+              top:15px;
+              left:15px;
+              height:100px;
+              width:100px;
+              border-radius:4px;
+              font-size:42px;
+              font-weight:700;
+              text-align:center;
+              line-height:100px;
+              color:#fff;
+              background-color:#222;
+            }
+          }
+
+          &:last-child {
+            margin-bottom:0;
+            border-bottom:0;
+          }
+        }
+      }
+    }
+  }
+
+  /*
+  // Sidebar
+  */
+
+  aside {
+    width:25%;
+
+    > section {
+      margin-bottom:20px;
+      border:1px solid #efefef;
+      border-radius:4px;
+      overflow:hidden;
+      box-shadow:1px 1px 2px 0 rgba(0,0,0,0.05);
+
+      h3 {
+        margin:0;
+        padding:15px 20px;
+        font-size:18px;
+        background-color:#f9f9f9;
+
+        i {
+          margin-right:5px;
+          font-size:20px;
+          color:#222;
+        }
+      }
+
+      > ul {
+        margin:0;
+        padding:15px;
+
+        li {
+          margin-bottom:7px;
+          font-size:14px;
+
+          i {
+            margin-right:5px;
+            width:20px;
+            text-align:center;
+          }
+
+          &:last-child {
+            margin-bottom:0;
+          }
+        }
+      }
+
+      > div {
+        padding:0 20px;
+
+        h4 {
+          margin:15px 0 10px;
+          font-size:16px;
+        }
+
+        ol {
+          margin:0 0 20px 0;
+          padding:0 0 0 20px;
+
+          li {
+            margin-bottom:7px;
+            font-size:14px;
+
+            span {
+              display:inline-block;
+
+              &:last-child {
+                float:right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
