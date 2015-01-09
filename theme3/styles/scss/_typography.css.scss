@@ -1,0 +1,31 @@
+/*
+// Typography
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700);
+
+$droidSans: 'Droid Sans', helvetica, sans-serif;
+
+/*
+// Headings
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:$droidSans;
+  font-weight:700;
+  color:$black;
+}
+
+/*
+// Helpers
+*/
+
+.roman {
+  font-family:$droidSans;
+  font-weight:400;
+}
+
+.bold {
+  font-family:$droidSans;
+  font-weifht:700;
+}
