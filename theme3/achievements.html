@@ -26,10 +26,9 @@
       <div class="user-ctrl">
         <nav class="main-nav">
           <ul>
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/achievements">Achievements</a></li>
-            <li><a href="/cheevers">Cheevers</a></li>
-            <!-- <li><a href="/portfolio">My Portfolio</a></li> -->
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="achievements.html">Achievements</a></li>
+            <li><a href="cheevers.html">Cheevers</a></li>
             <li>
               <a href="#">Welcome Garth <i class="fa fa-chevron-down"></i></a>
               <ul>
@@ -46,22 +45,43 @@
   </header>
 
 
-  <section class="home container">
+  <section class="achievements container">
 
     <div class="intro">
       <h2>See what achievements others are earning!</h2>
     </div>
 
     <div class="search">
-      <h4>Achievement Name:</h4><input type="text"></input>
-      <h4>Contributor:</h4><input type="text"></input>
-      <h4>Date Created:</h4><input type="date"></input> to <input type="date"></input>
-      <h4>Sort results by:</h4>
-        <select>
-          <option val="name">Name</option>
-          <option val="name">Score</option>          
-        </select>
-      <button>Search</button>
+      <form>
+        <div class="form-row">
+          <label>Achievement Name:</label>
+          <input type="text" placeholder="Enter Achievement"></input>
+        </div>
+
+        <div class="form-row">
+          <label>Contributor:</label>
+          <input type="text" placeholder="Enter Name"></input>
+        </div>
+
+        <div class="form-row dates">
+          <label>Date Created:</label>
+          <input type="date"></input>
+          <span>to</span>
+          <input type="date"></input>
+        </div>
+
+        <div class="form-row">
+          <label>Sort results by:</label>
+          <div class="select-wrap">
+            <select>
+              <option val="name">Name</option>
+              <option val="name">Score</option>
+            </select>
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <button>Search</button>
+        </div>
+      </form>
     </div>
 
 

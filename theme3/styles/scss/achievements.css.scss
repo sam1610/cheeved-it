@@ -1,0 +1,271 @@
+/*
+// Achievements
+*/
+
+section.achievements {
+
+  /*
+  // Search
+  */
+
+  div.search {
+    padding:20px;
+    margin-bottom:20px;
+    width:100%;
+    border:1px solid #ebebeb;
+    border-radius:4px;
+    box-shadow:1px 1px 2px 0 rgba(0,0,0,0.05);
+    overflow:hidden;
+
+    div.form-row {
+      display:inline-block;
+      float:left;
+      width:20%;
+      margin-right:2%;
+
+      label {
+        display:block;
+        margin-bottom:10px;
+        width:100%;
+        font-size:14px;
+        font-weight:700;
+        font-family:$droidSans;
+        color:$orange;
+      }
+
+      input[type="text"] {
+        padding-left:10px;
+        width:100%;
+        height:36px;
+        border:1px solid #ddd;
+        border-radius:3px;
+        box-shadow:none;
+        font-size:14px;
+        font-family:$droidSans;
+
+        &:focus {
+          box-shadow:0;
+          outline:0;
+          border:1px solid $blue;
+        }
+      }
+
+      &.dates {
+        width:30%;
+
+        input {
+          display:inline-block;
+          float:left;
+          padding-left:10px;
+          width:46%;
+          height:36px;
+          border:1px solid #ddd;
+          border-radius:3px;
+          box-shadow:none;
+          font-size:12px;
+          font-family:$droidSans;
+
+          &:focus {
+            box-shadow:0;
+            outline:0;
+            border:1px solid $blue;
+          }
+        }
+
+        span {
+          display:inline-block;
+          float:left;
+          width:8%;
+          font-size:12px;
+          line-height:36px;
+          text-align:center;
+        }
+      }
+
+      &:last-child {
+        width:24%;
+        margin-right:0;
+
+        div.select-wrap {
+          position:relative;
+          display:inline-block;
+          float:left;
+          width:57%;
+          margin-right:4%;
+
+          i {
+            position:absolute;
+            top:0;
+            right:12px;
+            color:#ddd;
+            line-height:36px;
+          }
+        }
+
+        select {
+          appearance:none;
+          -webkit-appearance:none;
+          padding-left:10px;
+          width:100%;
+          height:36px;
+          border:1px solid #ddd;
+          border-radius:3px;
+          background-color:#fff;
+          font-size:14px;
+          font-family:$droidSans;
+          color:#444;
+
+          &:focus {
+            box-shadow:0;
+            outline:0;
+            border:1px solid $blue;
+          }
+        }
+
+        button {
+          appearance:none;
+          -webkit-appearance:none;
+          width:39%;
+          height:36px;
+          border:none;
+          border-radius:3px;
+          font-family:$droidSans;
+          font-size:16px;
+          color:#fff;
+          background-color:$blue;
+        }
+      }
+    }
+  }
+
+  /*
+  // Content
+  */
+
+  section.content {
+    width:100%;
+    margin-right:1.75%;
+
+    /*
+    // Achievements
+    */
+
+    div.achievements {
+      margin-bottom:10px;
+      border:1px solid #ebebeb;
+      border-radius:4px;
+      box-shadow:1px 1px 2px 0 rgba(0,0,0,0.05);
+      overflow:hidden;
+
+      > h3 {
+        margin:0;
+        padding:15px 20px;
+        font-size:18px;
+        background-color:#f9f9f9;
+
+        i {
+          margin-right:5px;
+          font-size:20px;
+          color:$black;
+        }
+      }
+
+      > ul {
+        > li {
+          position:relative;
+          padding:15px;
+          margin-bottom:10px;
+          border-bottom:1px solid #ebebeb;
+          font-size:14px;
+
+          div.heading {
+            overflow:hidden;
+            padding-left:115px;
+
+            > h4,
+            div.stats {
+              display:inline-block;
+            }
+
+            > h4 {
+              float:left;
+              margin:0;
+              font-size:16px;
+              color:$blue;
+
+              &:hover {
+                text-decoration:underline;
+                cursor:pointer;
+              }
+            }
+
+            div.stats {
+              float:right;
+
+              div {
+                display:inline-block;
+                float:left;
+                color:$black;
+
+                &:first-child {
+                  margin-right:6px;
+                }
+              }
+            }
+          }
+
+          div.info {
+            overflow:hidden;
+            padding-left:115px;
+
+            p {
+              font-size:14px;
+              line-height:18px;
+              color:#555;
+            }
+
+            > ul {
+              overflow:hidden;
+
+              li {
+                display:inline-block;
+                float:left;
+                margin-right:12px;
+                font-size:13px;
+                font-style:italic;
+                color:#555;
+
+                span {
+                  &:first-child {
+                    font-weight:bold;
+                  }
+                }
+              }
+            }
+
+            div.score {
+              position:absolute;
+              top:15px;
+              left:15px;
+              height:100px;
+              width:100px;
+              border-radius:4px;
+              font-size:42px;
+              font-weight:700;
+              text-align:center;
+              line-height:100px;
+              color:$black;
+              background-color:#fff;
+              border:1px solid $grey;
+            }
+          }
+
+          &:last-child {
+            margin-bottom:0;
+            border-bottom:0;
+          }
+        }
+      }
+    }
+  }
+}
