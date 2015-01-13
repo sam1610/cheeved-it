@@ -1,0 +1,141 @@
+  
+{% extends "base.template" %}
+{% block content %}
+
+<section class="cheevers container">
+
+    <div class="intro">
+      <h2>Find your fellow Cheevers and see what they're up to!</h2>
+    </div>
+
+    <div class="search">
+      <div class="form-row">
+        <label>Cheever Name:</label>
+        <input type="text" placeholder="Ex: Phil Jackson"></input>
+      </div>
+
+      <div class="form-row">
+        <label>Score between:</label>
+        <input type="text" placeholder="100"></input>
+      </div>
+
+      <div class="form-row and">
+        <span>and<span>
+      </div>
+
+      <div class="form-row top-marg">
+        <input type="text" placeholder="1000"></input>
+      </div>
+
+      <div class="form-row top-marg">
+        <button>Search</button>
+      </div>
+    </div>
+
+    <!-- Content -->
+
+    <section class="content">
+
+      <div class="cheevers">
+        <h3><i class="fa fa-search"></i> Search Results:</h3>
+        <ul>
+          <li>
+            <div class="heading">
+              <h4>Michael Jordan</h4>
+              <div class="stats">
+                <div>
+                  <i class="fa fa-asterisk"></i>
+                  <span>Followers - 1981</span>
+                </div>
+                <div>
+                  <i class="fa fa-check-square"></i>
+                  <span>Following - 112</span>
+                </div>
+                <div>
+                  <i class="fa fa-heart"></i>
+                  <span>Already following</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info">
+              <p>Bio - Pellentesque eros erat, vestibulum in dapibus ut, posuere vel
+              magna. Fusce aliquet pellentesque massa ultricies viverra. Cras
+              lorem ipsum, volutpat sit amet diam non, consectetur malesuada
+              justo.</p>
+
+              <div class="avatar">
+                <i class="fa fa-user"></i>
+              </div>
+            </div>
+
+          </li>
+
+          <li>
+            <div class="heading">
+              <h4>Scottie Pippen</h4>
+              <div class="stats">
+                <div>
+                  <i class="fa fa-asterisk"></i>
+                  <span>Followers - 1001</span>
+                </div>
+                <div>
+                  <i class="fa fa-check-square"></i>
+                  <span>Following - 244</span>
+                </div>
+                <div>
+                  <i class="fa fa-heart"></i>
+                  <span>Follow me!</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info">
+              <p>Bio - Pellentesque eros erat, vestibulum in dapibus ut, posuere vel
+              magna. Fusce aliquet pellentesque massa ultricies viverra. Cras
+              lorem ipsum, volutpat sit amet diam non, consectetur malesuada
+              justo.</p>
+
+              <div class="avatar">
+                <i class="fa fa-user"></i>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="heading">
+              <h4>Steve Kerr</h4>
+              <div class="stats">
+                <div>
+                  <i class="fa fa-asterisk"></i>
+                  <span>Followers - 422</span>
+                </div>
+                <div>
+                  <i class="fa fa-check-square"></i>
+                  <span>Following - 87</span>
+                </div>
+                <div>
+                  <i class="fa fa-heart"></i>
+                  <span>Follow me!</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info">
+              <p>Bio - Pellentesque eros erat, vestibulum in dapibus ut, posuere vel
+              magna. Fusce aliquet pellentesque massa ultricies viverra. Cras
+              lorem ipsum, volutpat sit amet diam non, consectetur malesuada
+              justo.</p>
+
+              <div class="avatar">
+                <i class="fa fa-user"></i>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </section>
+  
+
+{% endblock %}

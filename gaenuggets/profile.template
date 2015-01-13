@@ -1,0 +1,121 @@
+  
+{% extends "base.template" %}
+{% block content %}
+
+    <section class="content">
+
+      <div class="profile">
+        <h3><i class="fa fa-edit"></i> My Profile:</h3>
+        <fieldset>
+          <h4>Username:</h4>Scharth Gulte
+          <h4>Email:</h4><input type="text" value="megarth@gmail.com"></input>    
+          <h4>Bio:</h4><input type="text" value=""></input>    
+
+          <h4>Following:</h4>
+          <ul class="following">
+            <li>Michael Jordan<li>
+            <li>Scottie Pippin</li>
+          </ul>          
+        </fieldset>
+
+        <div class="newachievement">
+          <h3><i class="fa fa-edit"></i>Add New Achievement:</h3>
+          <fieldset>
+            <h4>Name:</h4><input type="text" value="New Achievement"></input>
+            <h4>Desc:</h4><input type="text"></input>
+            <h4>Category:</h4><input type="text"></input>
+            <h4>Score:</h4><input type="text" value="50"></input>
+          </fieldset>
+        </div>
+        
+        <h4>My Achievements</h4>     
+
+        <ul>
+          <li>
+            <div class="heading">
+              <h4>Google App Engine Qualified Developer</h4>
+              <div class="stats">
+                <div>
+                  <i class="fa fa-thumbs-up"></i>
+                  <span>(2364)</span>
+                </div>
+                <div>
+                  <i class="fa fa-check"></i>
+                  <span>(210)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info">
+              <p>Pellentesque eros erat, vestibulum in dapibus ut, posuere vel
+              magna. Fusce aliquet pellentesque massa ultricies viverra. Cras
+              lorem ipsum, volutpat sit amet diam non, consectetur malesuada
+              justo.</p>
+
+              <ul>
+                <li>
+                  <span>Contributor:</span>
+                  <span>Michael Jordan</span>
+                </li>
+                <li>
+                  <span>Category:</span>
+                  <span>IT- App Dev</span>
+                </li>
+                <li>
+                  <span>Created:</span>
+                  <span>12.31.2014</span>
+                </li>
+              </ul>
+
+              <div class="score">100</div>
+            </div>
+          </li>
+          <li>
+            <div class="heading">
+              <h4>Google App Engine Qualified Developer</h4>
+              <div class="stats">
+                <div>
+                  <i class="fa fa-thumbs-up"></i>
+                  <span>(2364)</span>
+                </div>
+                <div>
+                  <i class="fa fa-check"></i>
+                  <span>(210)</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="info">
+              <p>Pellentesque eros erat, vestibulum in dapibus ut, posuere vel
+              magna. Fusce aliquet pellentesque massa ultricies viverra. Cras
+              lorem ipsum, volutpat sit amet diam non, consectetur malesuada
+              justo.</p>
+
+              <ul>
+                <li>
+                  <span>Contributor:</span>
+                  <span>Michael Jordan</span>
+                </li>
+                <li>
+                  <span>Category:</span>
+                  <span>IT- App Dev</span>
+                </li>
+                <li>
+                  <span>Created:</span>
+                  <span>12.31.2014</span>
+                </li>
+              </ul>
+
+              <div class="score">250</div>
+            </div>
+          </li>          
+        </ul>
+
+
+      </div>
+    </section>
+  </section>
+
+  
+
+{% endblock %}
