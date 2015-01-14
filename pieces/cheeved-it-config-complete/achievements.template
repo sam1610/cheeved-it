@@ -1,0 +1,56 @@
+  
+{% extends "base.template" %}
+{% block content %}
+
+  <section class="achievements container">
+
+    <div class="intro">
+      <h2>See what achievements others are earning!</h2>
+    </div>
+
+    <div class="search">
+      <form>
+        <div class="form-row">
+          <label>Achievement Name:</label>
+          <input type="text" placeholder="Enter Achievement"></input>
+        </div>
+
+        <div class="form-row">
+          <label>Contributor:</label>
+          <input type="text" placeholder="Enter Name"></input>
+        </div>
+
+        <div class="form-row dates">
+          <label>Date Created:</label>
+          <input type="date"></input>
+          <span>to</span>
+          <input type="date"></input>
+        </div>
+
+        <div class="form-row">
+          <label>Sort results by:</label>
+          <div class="select-wrap">
+            <select>
+              <option val="name">Name</option>
+              <option val="name">Score</option>
+            </select>
+            <i class="fa fa-chevron-down"></i>
+          </div>
+          <button>Search</button>
+        </div>
+      </form>
+    </div>
+
+
+    <!-- Content -->
+
+    <section class="content">
+
+      <div class="achievements">
+        <h3><i class="fa fa-search"></i> Search Results:</h3>
+        
+      </div>
+    </section>
+  </section>
+
+{% endblock %}

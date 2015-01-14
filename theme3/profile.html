@@ -26,14 +26,13 @@
       <div class="user-ctrl">
         <nav class="main-nav">
           <ul>
-            <li class="active"><a href="/">Home</a></li>
-            <li><a href="/achievements">Achievements</a></li>
-            <li><a href="/cheevers">Cheevers</a></li>
-            <!-- <li><a href="/portfolio">My Portfolio</a></li> -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="achievements.html">Achievements</a></li>
+            <li><a href="cheevers.html">Cheevers</a></li>
             <li>
               <a href="#">Welcome Garth <i class="fa fa-chevron-down"></i></a>
               <ul>
-                <li><a href="/profile">My Profile</a></li>
+                <li class="active"><a href="profile.html">My Profile</a></li>
                 <li><a href="/settings">Settings</a></li>
                 <li><a href="/admin">Admin</a></li>
                 <li><a href="/logout">Logout</a></li>
@@ -45,44 +44,81 @@
     </div>
   </header>
 
-
-  <section class="home container">
-
+  <section class="profile container">
     <div class="intro">
       <h2>Keep your Achievements up to date!</h2>
     </div>
 
-
     <!-- Content -->
 
     <section class="content">
+      <section class="profile-edit">
+        <div class="profile-info">
+          <h2><i class="fa fa-edit"></i> My Profile</h2>
 
-      <div class="profile">
-        <h3><i class="fa fa-edit"></i> My Profile:</h3>
-        <fieldset>
-          <h4>Username:</h4>Scharth Gulte
-          <h4>Email:</h4><input type="text" value="megarth@gmail.com"></input>    
-          <h4>Bio:</h4><input type="text" value=""></input>    
+          <div class="profile-info-body">
+            <form name="edit-user">
+              <div class="username">
+                <label>Username:</label>
+                <input type="text" name="username" value="Gary Schulte"></input>
+              </div>
 
-          <h4>Following:</h4>
-          <ul class="following">
-            <li>Michael Jordan<li>
-            <li>Scottie Pippin</li>
-          </ul>          
-        </fieldset>
+              <div class="email">
+                <label>Email:</label>
+                <input type="email" name="email" value="megarth@gmail.com"></input>
+              </div>
 
-        <div class="newachievement">
-          <h3><i class="fa fa-edit"></i>Add New Achievement:</h3>
-          <fieldset>
-            <h4>Name:</h4><input type="text" value="New Achievement"></input>
-            <h4>Desc:</h4><input type="text"></input>
-            <h4>Category:</h4><input type="text"></input>
-            <h4>Score:</h4><input type="text" value="50"></input>
-          </fieldset>
+              <div class="bio">
+                <label>Bio:</label>
+                <textarea name="bio"></textarea>
+              </div>
+
+              <div class="following">
+                <label>Following:</label>
+                <ul>
+                  <li>Michael Jordan</li>
+                  <li>Scottie Pippen</li>
+                </ul>
+              </div>
+
+              <button type="submit">Update</button>
+            </form>
+          </div>
         </div>
-        
-        <h4>My Achievements</h4>     
 
+        <div class="add-new">
+          <h2><i class="fa fa-plus"></i> Add New Achievement</h2>
+
+          <div class="add-new-body">
+            <form name="add-new">
+              <div class="name">
+                <label>Name:</label>
+                <input type="text" name="achievement-name" value="New Achievement"></input>
+              </div>
+
+              <div class="category">
+                <label>Category:</label>
+                <input type="text" name="achievement-category"></input>
+              </div>
+
+              <div class="description">
+                <label>Description:</label>
+                <textarea name="achievement-description"></textarea>
+              </div>
+
+              <div class="score">
+                <label>Score:</label>
+                <input type="text" name="achievement-score" value="50"></input>
+              </div>
+
+              <button type="submit">Add</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="my-achievements">
+        <h3><i class="fa fa-flag"></i> My Achievements</h3>
         <ul>
           <li>
             <div class="heading">
@@ -123,6 +159,7 @@
               <div class="score">100</div>
             </div>
           </li>
+
           <li>
             <div class="heading">
               <h4>Google App Engine Qualified Developer</h4>
@@ -161,16 +198,11 @@
 
               <div class="score">250</div>
             </div>
-          </li>          
+          </li>
         </ul>
-
-
-      </div>
+      </section>
     </section>
   </section>
-
-
-
 
   <!-- Footer -->
 
